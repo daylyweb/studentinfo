@@ -1,9 +1,10 @@
-package org.studentinfo.servlet;
+package com.daylyweb.studentinfo.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import org.studentinfo.beans.*;
-import org.studentinfo.dao.SelCourseDAO;
+
+import com.daylyweb.studentinfo.beans.*;
+import com.daylyweb.studentinfo.dao.SelCourseDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

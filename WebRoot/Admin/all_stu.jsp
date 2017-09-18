@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*,org.studentinfo.dao.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*,com.daylyweb.studentinfo.dao.*" pageEncoding="UTF-8"%>
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
@@ -6,12 +6,12 @@
 	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 	User loginuser = (User)session.getAttribute("loginuser");
 %>
-<jsp:useBean id="Class" scope="page" class="org.studentinfo.beans.Class"  />
-<jsp:useBean id="classbean" scope="page" class="org.studentinfo.beans.ClassBean">
+<jsp:useBean id="Class" scope="page" class="com.daylyweb.studentinfo.beans.Class"  />
+<jsp:useBean id="classbean" scope="page" class="com.daylyweb.studentinfo.beans.ClassBean">
 	<jsp:setProperty property="page" name="classbean" param="page" />
 	<jsp:setProperty property="allclass" name="classbean" value="${classbean.allclass}" />
 </jsp:useBean>
-<jsp:useBean id="selcourse" scope="page" class="org.studentinfo.beans.SelCourse" />
+<jsp:useBean id="selcourse" scope="page" class="com.daylyweb.studentinfo.beans.SelCourse" />
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>

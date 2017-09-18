@@ -1,4 +1,4 @@
-package org.studentinfo.servlet;
+package com.daylyweb.studentinfo.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.studentinfo.beans.Class;
-import org.studentinfo.beans.ClassBean;
-import org.studentinfo.beans.Student;
-import org.studentinfo.beans.StudentBean;
-import org.studentinfo.beans.Teacher;
-import org.studentinfo.beans.TeacherBean;
-import org.studentinfo.beans.User;
-import org.studentinfo.beans.UserBean;
+import com.daylyweb.studentinfo.beans.Class;
+import com.daylyweb.studentinfo.beans.ClassBean;
+import com.daylyweb.studentinfo.beans.Student;
+import com.daylyweb.studentinfo.beans.StudentBean;
+import com.daylyweb.studentinfo.beans.Teacher;
+import com.daylyweb.studentinfo.beans.TeacherBean;
+import com.daylyweb.studentinfo.beans.User;
+import com.daylyweb.studentinfo.beans.UserBean;
 
 public class Alter extends HttpServlet {
 	HttpServletRequest Request;

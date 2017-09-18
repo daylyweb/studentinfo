@@ -1,9 +1,9 @@
-package org.studentinfo.beans;
+package com.daylyweb.studentinfo.beans;
 
 import java.util.ArrayList;
 
-import org.studentinfo.dao.ClassDAO;
-import org.studentinfo.dao.SelCourseDAO;
+import com.daylyweb.studentinfo.dao.ClassDAO;
+import com.daylyweb.studentinfo.dao.SelCourseDAO;
 
 public class SelCourseBean implements java.io.Serializable{
 	SelCourseDAO dao ;

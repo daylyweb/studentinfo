@@ -1,10 +1,10 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
+	String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<jsp:useBean id="teacher" scope="page" class="org.studentinfo.beans.Teacher"  />
-<jsp:useBean id="teacherbean" scope="request" class="org.studentinfo.beans.TeacherBean"  />
+<jsp:useBean id="teacher" scope="page" class="com.daylyweb.studentinfo.beans.Teacher"  />
+<jsp:useBean id="teacherbean" scope="request" class="com.daylyweb.studentinfo.beans.TeacherBean"  />
 <jsp:setProperty property="id" name="teacher" param="id" />
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%

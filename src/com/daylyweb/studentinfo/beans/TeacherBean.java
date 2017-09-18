@@ -1,10 +1,10 @@
-package org.studentinfo.beans;
+package com.daylyweb.studentinfo.beans;
 
 import java.util.ArrayList;
 
-import org.studentinfo.dao.StudentDAO;
-import org.studentinfo.dao.TeacherDAO;
-import org.studentinfo.dao.UserDAO;
+import com.daylyweb.studentinfo.dao.StudentDAO;
+import com.daylyweb.studentinfo.dao.TeacherDAO;
+import com.daylyweb.studentinfo.dao.UserDAO;
 
 public class TeacherBean {
 	private TeacherDAO dao;

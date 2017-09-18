@@ -1,4 +1,4 @@
-package org.studentinfo.servlet;
+package com.daylyweb.studentinfo.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.studentinfo.beans.UserBean;
-import org.studentinfo.beans.User;
+import com.daylyweb.studentinfo.beans.User;
+import com.daylyweb.studentinfo.beans.UserBean;
 
 public class Login extends HttpServlet {
 

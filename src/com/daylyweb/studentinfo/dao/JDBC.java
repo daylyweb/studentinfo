@@ -1,4 +1,4 @@
-package org.studentinfo.dao;
+package com.daylyweb.studentinfo.dao;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;

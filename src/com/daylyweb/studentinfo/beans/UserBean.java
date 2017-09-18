@@ -1,10 +1,10 @@
-package org.studentinfo.beans;
+package com.daylyweb.studentinfo.beans;
 
 import java.sql.Connection;
 import java.util.ArrayList;
 
-import org.studentinfo.beans.*;
-import org.studentinfo.dao.UserDAO;
+import com.daylyweb.studentinfo.beans.*;
+import com.daylyweb.studentinfo.dao.UserDAO;
 
 
 public class UserBean implements java.io.Serializable{
@@ -126,7 +126,7 @@ public class UserBean implements java.io.Serializable{
 		}
 		return msg;
 	}
-	public org.studentinfo.beans.User queryById(int id)
+	public com.daylyweb.studentinfo.beans.User queryById(int id)
 	{
 		return dao.queryByUserId(id);
 	}

@@ -1,4 +1,4 @@
-package org.studentinfo.filter;
+package com.daylyweb.studentinfo.filter;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.studentinfo.beans.User;
+import com.daylyweb.studentinfo.beans.User;
 
 public class LoginFilter implements Filter {
 
@@ -28,7 +28,7 @@ public class LoginFilter implements Filter {
 		HttpServletRequest request = (HttpServletRequest) arg0;
 		HttpServletResponse response = (HttpServletResponse) arg1;
 		String resultjsp ="login.jsp",msg="",url=request.getRequestURL().toString(),typename = "";
-		User User =(org.studentinfo.beans.User) request.getSession().getAttribute("loginuser");
+		User User =(com.daylyweb.studentinfo.beans.User) request.getSession().getAttribute("loginuser");
 		PrintWriter out = response.getWriter();
 		String path = request.getContextPath();
 		if (User == null) {//用户未登录

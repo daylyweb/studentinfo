@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*" pageEncoding="UTF-8"%>
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%
 String path = request.getContextPath();

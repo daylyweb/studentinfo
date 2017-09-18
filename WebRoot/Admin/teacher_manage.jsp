@@ -1,12 +1,12 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*" pageEncoding="UTF-8"%>
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
-String path = request.getContextPath();
+	String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<jsp:useBean id="teacher" scope="page" class="org.studentinfo.beans.Teacher"  />
-<jsp:useBean id="teacherbean" scope="page" class="org.studentinfo.beans.TeacherBean">
+<jsp:useBean id="teacher" scope="page" class="com.daylyweb.studentinfo.beans.Teacher"  />
+<jsp:useBean id="teacherbean" scope="page" class="com.daylyweb.studentinfo.beans.TeacherBean">
 <jsp:setProperty property="page" name="teacherbean" param="page" />
 <jsp:setProperty property="allteacher" name="teacherbean" value="${teacherbean.allteacher}"/>
 </jsp:useBean>

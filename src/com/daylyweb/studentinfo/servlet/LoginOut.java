@@ -1,4 +1,4 @@
-package org.studentinfo.servlet;
+package com.daylyweb.studentinfo.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;

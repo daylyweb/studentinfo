@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*,org.studentinfo.dao.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*,com.daylyweb.studentinfo.dao.*" pageEncoding="UTF-8"%>
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
@@ -7,13 +7,13 @@
 	User loginuser = (User)session.getAttribute("loginuser");
 	session.setAttribute("classid",request.getParameter("classid"));
 %>
-<jsp:useBean id="selcoursebean" scope="page" class="org.studentinfo.beans.SelCourseBean">
+<jsp:useBean id="selcoursebean" scope="page" class="com.daylyweb.studentinfo.beans.SelCourseBean">
 	<jsp:setProperty property="classid" name="selcoursebean" param="classid" />
 	<jsp:setProperty property="usertype" name="selcoursebean" value="4" />
 	<jsp:setProperty property="students" name="selcoursebean" value="${selcoursebean.students}" />
 	<jsp:setProperty property="page" name="selcoursebean" param="page" />
 </jsp:useBean>
-<jsp:useBean id="selcourse" scope="page" class="org.studentinfo.beans.SelCourse" />
+<jsp:useBean id="selcourse" scope="page" class="com.daylyweb.studentinfo.beans.SelCourse" />
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>

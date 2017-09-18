@@ -1,4 +1,4 @@
-package org.studentinfo.beans;
+package com.daylyweb.studentinfo.beans;
 
 public class Class {
 	private int id;

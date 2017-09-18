@@ -1,11 +1,11 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
-String path = request.getContextPath();
+	String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<jsp:useBean id="student" scope="page" class="org.studentinfo.beans.Student"  />
-<jsp:useBean id="userbean" scope="request" class="org.studentinfo.beans.UserBean"  />
+<jsp:useBean id="student" scope="page" class="com.daylyweb.studentinfo.beans.Student"  />
+<jsp:useBean id="userbean" scope="request" class="com.daylyweb.studentinfo.beans.UserBean"  />
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%
 		User loginuser = (User)session.getAttribute("loginuser");

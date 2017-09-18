@@ -1,10 +1,10 @@
-package org.studentinfo.beans;
+package com.daylyweb.studentinfo.beans;
 
 import java.util.ArrayList;
 
-import org.studentinfo.beans.Student;
-import org.studentinfo.dao.StudentDAO;
-import org.studentinfo.dao.UserDAO;
+import com.daylyweb.studentinfo.beans.Student;
+import com.daylyweb.studentinfo.dao.StudentDAO;
+import com.daylyweb.studentinfo.dao.UserDAO;
 
 public class StudentBean implements java.io.Serializable {
 	private StudentDAO dao;

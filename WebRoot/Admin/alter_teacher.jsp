@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,org.studentinfo.beans.*,org.studentinfo.dao.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,com.daylyweb.studentinfo.beans.*,com.daylyweb.studentinfo.dao.*" pageEncoding="UTF-8"%>
 <%@ page contentType = "text/html;charset=UTF-8 "   %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
@@ -11,8 +11,8 @@
 	session.setAttribute("studentid",studentid);
 	//session.setAttribute("classid", classid);
 %>
-<jsp:useBean id="slecourse" scope="page" class="org.studentinfo.beans.SelCourse"></jsp:useBean>
-<jsp:useBean id="selcoursebean" scope="page" class="org.studentinfo.beans.SelCourseBean">
+<jsp:useBean id="slecourse" scope="page" class="com.daylyweb.studentinfo.beans.SelCourse"></jsp:useBean>
+<jsp:useBean id="selcoursebean" scope="page" class="com.daylyweb.studentinfo.beans.SelCourseBean">
 	<jsp:setProperty property="studentid" name="selcoursebean" param="studentid" />
 </jsp:useBean>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

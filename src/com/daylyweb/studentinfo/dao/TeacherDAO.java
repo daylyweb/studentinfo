@@ -1,4 +1,4 @@
-package org.studentinfo.dao;
+package com.daylyweb.studentinfo.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import org.studentinfo.beans.Teacher;
+import com.daylyweb.studentinfo.beans.Teacher;
 
 public class TeacherDAO {
 	Connection con;
